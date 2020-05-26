@@ -15,8 +15,8 @@ RUN apt-get install -y php7.0 libapache2-mod-php7.0 php7.0-cli php7.0-common php
 RUN rm -rf /var/www/html/*
 RUN mkdir /var/www/html/template
 RUN mkdir /var/www/html/content
-COPY weconfig.php /var/www/html
-COPY functions.php /var/www/html
+COPY website/config.php /var/www/html
+COPY website/functions.php /var/www/html
 COPY website/index.php /var/www/html
 COPY website/template/template.php /var/www/html/template
 COPY website/content/404.php  /var/www/html/content
