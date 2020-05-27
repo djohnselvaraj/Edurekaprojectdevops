@@ -13,11 +13,11 @@ public class simplewebapp {
 	WebDriver driver;
 	@BeforeMethod
 	public void launch() {
-		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "	/opt/google/chromedrive/bin");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
 		driver = new ChromeDriver(options);		
-		driver.get("http://ec2-3-14-5-67.us-east-2.compute.amazonaws.com/index.php");
+		driver.get("http://ec2-18-223-102-128.us-east-2.compute.amazonaws.com/index.php");
 		driver.manage().window().maximize();
 	}
   @Test
