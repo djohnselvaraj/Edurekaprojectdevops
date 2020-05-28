@@ -13,7 +13,7 @@ public class simplewebapp {
 	WebDriver driver;
 	@BeforeMethod
 	public void launch() {
-		System.setProperty("webdriver.chrome.driver", "/opt/google/chromedrive/bin/chromedrive");
+		System.setProperty("webdriver.chrome.driver", "/opt/google/chromedriver/bin/chromedriver");
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
 		driver = new ChromeDriver(options);		
