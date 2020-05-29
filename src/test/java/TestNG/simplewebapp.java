@@ -17,7 +17,7 @@ public class simplewebapp {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
 		driver = new ChromeDriver(options);		
-		driver.get("http://ec2-18-223-102-128.us-east-2.compute.amazonaws.com/index.php");
+		driver.get("http://ec2-18-223-102-128.us-east-2.compute.amazonaws.com:8001/index.php");
 		driver.manage().window().maximize();
 	}
   @Test
