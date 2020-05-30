@@ -25,11 +25,11 @@ public class simplewebapp {
   @Test
   public void verifyAboutUs() throws InterruptedException {
 	// TODO Auto-generated method stub
-	System.out.println("Test0");
+
 	if(driver.getPageSource().contains("About Us")){
-		System.out.println("Test1");
+
 			driver.findElement(By.id("About Us")).click();
-		System.out.println("Test2");			
+		
 		if(driver.getPageSource().contains("PID-ab2-pg")) {
 			String y = driver.findElement(By.id("PID-ab2-pg")).getText();
 			System.out.println(y);
