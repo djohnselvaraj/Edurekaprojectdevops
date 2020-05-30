@@ -26,7 +26,7 @@ public class simplewebapp {
   public void verifyAboutUs() throws InterruptedException {
 	// TODO Auto-generated method stub
 	System.out.println("Test0");
-	if(drive.getPageSource().contains("About Us")){
+	if(driver.getPageSource().contains("About Us")){
 		System.out.println("Test1");
 			driver.findElement(By.id("About Us")).click();
 		System.out.println("Test2");			
