@@ -27,9 +27,7 @@ public class simplewebapp {
 	// TODO Auto-generated method stub
 
 	if(driver.getPageSource().contains("About Us")){
-
-			driver.findElement(By.id("About Us")).click();
-		
+		driver.findElement(By.id("About Us")).click();
 		if(driver.getPageSource().contains("PID-ab2-pg")) {
 			String y = driver.findElement(By.id("PID-ab2-pg")).getText();
 			System.out.println(y);
