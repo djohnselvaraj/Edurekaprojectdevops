@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 public class simplewebapp {
 	WebDriver driver;
+	WebElement element;
 	@BeforeMethod
 	public void launch() {
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
@@ -23,7 +24,10 @@ public class simplewebapp {
   @Test
   public void verifyAboutUs() throws InterruptedException {
 	// TODO Auto-generated method stub
-	 	
+		
+		WebDriverWait wait = new WebDriverWait(driver, 100);
+		element= wait.until(ExpectedConditions.elementToBeClickable(By.id("About Us")));
+			
 		driver.findElement(By.id("About Us")).click();		
 		if(driver.getPageSource().contains("PID-ab2-pg")) {
 			String y = driver.findElement(By.id("PID-ab2-pg")).getText();
