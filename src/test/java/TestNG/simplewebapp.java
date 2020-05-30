@@ -9,6 +9,8 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class simplewebapp {
 	WebDriver driver;
@@ -22,13 +24,13 @@ public class simplewebapp {
 		driver = new ChromeDriver(options);		
 		driver.get("http://ec2-18-223-102-128.us-east-2.compute.amazonaws.com:8001/index.php");
 		driver.manage().window().maximize();
-		wait = new WebDriverWait(driver, 100);
-		element= wait.until(ExpectedConditions.elementToBeClickable(By.id("About Us")));
+		
 	}
   @Test
   public void verifyAboutUs() throws InterruptedException {
 	// TODO Auto-generated method stub
-			
+		wait = new WebDriverWait(driver, 100);
+		element= wait.until(ExpectedConditions.elementToBeClickable(By.id("About Us")));	
 		driver.findElement(By.id("About Us")).click();		
 		if(driver.getPageSource().contains("PID-ab2-pg")) {
 			String y = driver.findElement(By.id("PID-ab2-pg")).getText();
