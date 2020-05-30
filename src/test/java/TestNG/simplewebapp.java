@@ -2,6 +2,7 @@ package TestNG;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
@@ -12,6 +13,7 @@ import org.testng.annotations.Test;
 public class simplewebapp {
 	WebDriver driver;
 	WebElement element;
+	
 	@BeforeMethod
 	public void launch() {
 		System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
