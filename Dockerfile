@@ -1,7 +1,5 @@
 FROM devopsedu/webapp
 
-
-
 MAINTAINER Himanshu Shinde <himanshu@gmail.com>
 
 #Update Repository
@@ -32,7 +30,4 @@ EXPOSE 80
 
 #Start Apache service
 CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
-
-
-
 
