@@ -1,5 +1,6 @@
 package TestNG;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,7 +18,7 @@ public class simplewebapp {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--headless");
 		driver = new ChromeDriver(options);		
-		driver.get("http://ec2-3-17-14-99.us-east-2.compute.amazonaws.com:8001/index.php");
+		driver.get("http://ec2-18-188-147-222.us-east-2.compute.amazonaws.com:8001/index.php");
 		driver.manage().window().maximize();
 		
 	}
