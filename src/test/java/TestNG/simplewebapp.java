@@ -39,7 +39,7 @@ public class simplewebapp {
 		}		
 				
 		Thread.sleep(2000);
-		//driver.close();
+		
   }	 
   @AfterMethod
 	public void close() {
