@@ -20,7 +20,6 @@ public class simplewebapp {
 		driver = new ChromeDriver(options);		
 		driver.get("http://ec2-18-188-147-222.us-east-2.compute.amazonaws.com:8001/index.php");
 		driver.manage().window().maximize();
-		
 	}
   @Test
   public void verifyAboutUs() throws InterruptedException {
