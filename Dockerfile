@@ -1,6 +1,5 @@
 FROM devopsedu/webapp
 
-
 MAINTAINER JOHN Selvraj  <JOHN@gmail.com>
 
 #Update Repository
