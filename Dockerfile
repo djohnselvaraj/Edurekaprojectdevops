@@ -1,6 +1,7 @@
 FROM devopsedu/webapp
 
-MAINTAINER Himanshu Shinde <himanshu@gmail.com>
+
+MAINTAINER JOHN Selvraj  <JOHN@gmail.com>
 
 #Update Repository
 RUN apt-get update -y
